@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Show full text on hover</title>
+		<style>
+		.demo
+		{
+			width: 100px;
+			text-overflow: ellipsis;
+			cursor: pointer;
+			word-break: break-all;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+		.demo:hover
+		{
+			overflow: visible;
+			white-space: normal;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="demo">
+			This is demo text
+		</div>
+	</body>
+</html>
