@@ -48,9 +48,12 @@ p::first-letter {
   color: #f6ee06;
 } */
 
-.movieDetails{
+.movieDetailBlock{
   font-size: 10px;
 }
 .movieDetailTitle{
+  color: #f6ee06;
+}
+.movieDescription{
   color: #f6ee06;
 }
