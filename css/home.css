@@ -1,0 +1,19 @@
+.header {
+    background-color: aqua;
+    /* border:1px solid black; */
+}
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.hero {
+    width: 10%;
+    /* border-radius: 50%; */
+    border-radius: 100% 100% 100% 100%;
+    position: relative;
+    top: 10px;
+}

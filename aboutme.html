@@ -5,35 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
-
-    <style>
-      body {
-        color: aliceblue;
-        background-color: #484935;
-      }
-
-      .divHeadings {
-        color: rgb(87, 180, 242);
-        margin: 10px 0px 10px 0;
-      }
-
-      .imgMood {
-        width: 20%;
-      }
-
-      .imdb {
-        color: #a03838;
-      }
-
-      /* div.ul{
-        color: aliceblue;
-      } */
-    </style>
+    <link rel="stylesheet" href="css/styleme.css" />
   </head>
   <body>
-    <h1>About Rajendra Maharjan</h1>
+    <h1 class="mainHeadings">About Rajendra Maharjan</h1>
     <hr />
-    <p>My name is Rajendra and I am jolly, clumsy and slow learner.</p>
+    <p>
+      <span id="spanDropCap">M</span>y name is Rajendra and I am
+      <strong>jolly</strong>, <strong>clumsy</strong>, and
+      <strong>slow learner</strong>.
+    </p>
 
     <div class="divHeadings">My Classes This Quarter</div>
 
@@ -47,27 +28,33 @@
     </ul>
 
     <div class="divHeadings">My Favourite movies</div>
-    <p>(I actually don't watch too many movies, so... here goes!)</p>
+    <p>
+      <span id="spanDropCap">(I</span> actually don't watch too many movies.
+      These are some of the favourite movies which I enjoyed.)
+    </p>
 
     <ol>
       <li>
         The Bourne Ultimatum (<a
           class="imdb"
-          href="https://www.imdb.com/title/tt0440963/" target="_blank"
+          href="https://www.imdb.com/title/tt0440963/"
+          target="_blank"
           >IMDB</a
         >)
       </li>
       <li>
         We Bought a Zoo (<a
           class="imdb"
-          href="https://www.imdb.com/title/tt1389137/?ref_=fn_al_tt_1" target="_blank"
+          href="https://www.imdb.com/title/tt1389137/?ref_=fn_al_tt_1"
+          target="_blank"
           >IMDB</a
         >)
       </li>
       <li>
         Good Will Hunting (<a
           class="imdb"
-          href="https://www.imdb.com/title/tt0119217/?ref_=nm_knf_i1" target="_blank"
+          href="https://www.imdb.com/title/tt0119217/?ref_=nm_knf_i1"
+          target="_blank"
           >IMDB</a
         >)
       </li>
@@ -76,10 +63,10 @@
     <div class="divHeadings">My Moods</div>
 
     <div>
-      <label>kuchVi:</label>
-      <img class="imgMood" src="images/kuchvi.png" alt="KuchVI Mood"/>
-      <label>Happy:</label>
-      <img class="imgMood" src="images/happy.png" alt="Happy Mood"/>
+      <label>KuchVi:</label>
+      <img class="imgMood" src="images/kuchvi.png" alt="KuchVI Mood" />
+      <label>Happy</label>
+      <img class="imgMood" src="images/happy.png" alt="Happy Mood" />
     </div>
 
     <div class="divHeadings">Fun Facts About My Neighbors</div>
@@ -87,13 +74,32 @@
       <li>Ritesh Maharjan: MIU Dorm Neighbor as well from Nepal</li>
       <li>Khadanandha K.C.: Always happy doing the assignments and labs.</li>
     </ul>
+    <br />
+    <br />
 
+    <!-- validators -->
     <div>
-      <a
-        href="https://validator.w3.org/nu/?doc=https://rajendramaharjan.github.io/aboutme.html"
-      >
-        <img src="https://manalabs.org/img/w3c-html.png" alt="WC3 Image name" />
-      </a>
+      <span>
+        <a
+          href="https://validator.w3.org/nu/?doc=https://rajendramaharjan.github.io/aboutme.html"
+        >
+          <img
+            src="https://manalabs.org/img/w3c-html.png"
+            alt="WC3 Image name"
+          />
+        </a>
+      </span>
+
+      <span>
+        <a
+          href="https://validator.w3.org/nu/?doc=https://rajendramaharjan.github.io/aboutme.html"
+        >
+          <img
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Validate CSS"
+          />
+        </a>
+      </span>
     </div>
   </body>
 </html>
