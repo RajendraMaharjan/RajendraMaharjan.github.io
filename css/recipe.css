@@ -11,6 +11,7 @@ h1 {
     background-color: #F0F0F0;
     font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
     font-size: 18px;
+    letter-spacing: 0.25em;
     width: fit-content;
     /* display: inline-block; */
 }
