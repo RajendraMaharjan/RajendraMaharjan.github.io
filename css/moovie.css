@@ -39,13 +39,19 @@ body {
 }
 
 .criticsReview {
-    /* width: 550px; */
-    width: 68%;
+    width: 550px;
+    /* width: 68%; */
+    float: left;
 }
 
-.overviewDe {
-    /* width: 250px; */
-    width: 32%;
+/* work on it  */
+.overviewDetails{
+    /* width: 32%; */
+    width: 250px;
+    height: auto;
+    background-color: #A2B964;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
 }
 
 .rottenBanner {
@@ -59,10 +65,18 @@ body {
     font-weight: bold;
 }
 
-.reviewSection {
+.leftReviewSection {
     width: 47%;
     display: inline-block;
     text-align: left;
+    margin: 0.5%;
+}
+
+.rightReviewSection {
+    width: 47%;
+    display: inline-block;
+    text-align: left;
+    margin: 0.5%;
 }
 
 .quoteSection {
@@ -72,4 +86,14 @@ body {
     font-size: 8pt;
     background-color: #e8dc9b;
     padding: 8px;
+    
+}
+
+.clear{
+    clear: both;
+}
+
+
+.validator{
+    text-align: right;
 }
