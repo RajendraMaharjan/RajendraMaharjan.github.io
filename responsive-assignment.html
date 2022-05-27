@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <style>
+      body {
+        margin: 5px;
+      }
+      .header {
+        background-color: rgb(162, 217, 232);
+        color: black;
+        font-size: 15pt;
+        font-weight: bolder;
+        text-align: center;
+        padding: 15px;
+      }
+      .menu {
+        display: flex;
+        background-color: rgb(36, 80, 79);
+        color: white;
+        /* padding: 10px; */
+        justify-content: flex-start;
+      }
+
+      .menu div {
+        margin: 10px 10px;
+      }
+
+      /* .columnContainer {
+        display: grid;
+        grid: auto / auto auto auto;
+      } */
+
+      /* for screens > 600px */
+      @media screen and (min-width: 600px) {
+        .columnContainer {
+          display: grid;
+          grid: auto / auto auto auto;
+        }
+      }
+
+      /* for lower screens */
+      @media screen and (max-width: 600px) {
+        .columnContainer {
+          display: grid;
+          grid: auto / auto auto;
+        }
+      }
+      .childColumnI {
+        background-color: rgb(170, 170, 170);
+        height: 100px;
+      }
+      .childColumnII {
+        background-color: rgb(187, 187, 187);
+        height: 100px;
+      }
+      .childColumnIII {
+        background-color: rgb(204, 204, 204);
+        height: 100px;
+      }
+
+      .footer {
+        background-color: rgb(36, 80, 79);
+        color: white;
+        font-size: 12pt;
+        font-weight: bold;
+        text-align: center;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="header">Header</div>
+    </div>
+    <div class="menu">
+      <div>Menu1</div>
+      <div>Menu2</div>
+      <div>Menu3</div>
+    </div>
+
+    <div class="columnContainer">
+      <div class="childColumnI">Column1</div>
+      <div class="childColumnII">Column2</div>
+      <div class="childColumnIII">Column3</div>
+    </div>
+
+    <footer class="footer">Footer</footer>
+  </body>
+</html>
