@@ -44,6 +44,7 @@ body {
   .childColumnII {
     background-color: rgb(187, 187, 187);
     flex: 1;
+ 
   }
 
   .childColumnIII {
@@ -62,12 +63,13 @@ body {
 
   .childColumnII {
     background-color: rgb(187, 187, 187);
-    flex: 1 0 50%;
+    flex: 1 0 100%;
+    order: 1;
   }
 
   .childColumnIII {
     background-color: rgb(204, 204, 204);
-    flex: 1 0 100%;
+    flex: 1 0 50%;
   }
 }
 
