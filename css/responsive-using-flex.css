@@ -23,47 +23,52 @@ body {
   margin: 10px 10px;
 }
 
-/* .columnContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      } */
+.columnContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columnContainer>div {
+  height: 100px;
+  text-align: center;
+}
 
 /* for screens > 600px */
 @media screen and (min-width: 600px) {
-  .columnContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+  .childColumnI {
+    background-color: rgb(170, 170, 170);
+    flex: 1;
+  }
+
+  .childColumnII {
+    background-color: rgb(187, 187, 187);
+    flex: 1;
+  }
+
+  .childColumnIII {
+    background-color: rgb(204, 204, 204);
+    flex: 1;
   }
 }
 
 /* for lower screens */
 @media screen and (max-width: 600px) {
-  .columnContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+  .childColumnI {
+    background-color: rgb(170, 170, 170);
+    flex: 1 0 50%;
   }
 
   .childColumnII {
     background-color: rgb(187, 187, 187);
-    height: 100px;
-    grid-row: 2/3;
-    grid-column: 1 / span 2;
+    flex: 1 0 50%;
   }
-}
 
-.childColumnI {
-  background-color: rgb(170, 170, 170);
-  height: 100px;
-}
-
-.childColumnII {
-  background-color: rgb(187, 187, 187);
-  height: 100px;
-}
-
-.childColumnIII {
-  background-color: rgb(204, 204, 204);
-  height: 100px;
+  .childColumnIII {
+    background-color: rgb(204, 204, 204);
+    flex: 1 0 100%;
+  }
 }
 
 .footer {
