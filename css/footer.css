@@ -1,0 +1,133 @@
+.footer {
+    background-color: rgb(32, 33, 38);
+    height: 400px;
+    color: white;
+    padding: 50px 200px 0px 200px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.aboutUs {
+    flex: 2;
+    padding: 0 80px;
+}
+
+.aboutUs>p {
+    color: rgb(101, 104, 100);
+}
+
+.latestTweet {
+    flex: 2;
+    padding: 0 40px;
+}
+
+.latestTweet span {
+    color: rgb(101, 104, 100);
+}
+
+.instaFeed {
+    flex: 1;
+    padding: 0 40px;
+}
+
+
+
+
+
+/* Font awesome ko */
+.themeColor {
+    color: rgb(244, 143, 42);
+}
+
+/* Font awesome ko */
+.themeBckColor {
+    background-color: rgb(244, 143, 42);
+}
+
+.themeColor>span {
+    color: white;
+    font-size: 12pt;
+}
+
+i {
+    text-transform: lowercase;
+    margin-right: 20px;
+}
+
+.textForm {
+    margin: 30px 0px 10px 0px;
+    margin-right: 100px;
+    padding: 2px;
+    display: flex;
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 30px;
+    padding-right: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: grey;
+}
+
+button {
+    margin-left: -91px;
+    height: 32px;
+    padding: 0px 30px;
+    background: rgb(244, 143, 42);
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 20px;
+
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+    padding-left: 10px;
+}
+
+.blockTitle {
+    font-weight: bolder;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.twitterFeed {
+    margin-bottom: 20px;
+}
+
+.feedBlocks {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.feedBlocks img {
+    width: 100px;
+    height: 100px;
+}
+
+.feedBlocks .item {
+    /* margin: 10px; */
+    padding: 5px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu .head {
+    display: flex;
+    /* justify-content: left; */
+}
+
+.head>div {
+    padding: 0 10px;
+}
