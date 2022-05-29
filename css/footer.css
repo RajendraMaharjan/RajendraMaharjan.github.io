@@ -21,6 +21,8 @@
 .latestTweet {
     flex: 2;
     padding: 0 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .latestTweet span {
@@ -31,9 +33,6 @@
     flex: 1;
     padding: 0 40px;
 }
-
-
-
 
 
 /* Font awesome ko */
@@ -100,6 +99,7 @@ button {
 
 .twitterFeed {
     margin-bottom: 20px;
+    max-height: 80px;
 }
 
 .feedBlocks {
