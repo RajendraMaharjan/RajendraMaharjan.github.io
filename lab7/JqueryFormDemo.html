@@ -5,170 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jquery Form</title>
-    <style>
-      .formContent {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        border: 2px solid black;
-        border-radius: 50px;
-        padding: 30px;
-      }
-      .lbl-60w {
-        margin-right: 300px;
-      }
-      .formContent .flex_rowg10 {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/jqueryForm.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $(function () {
-        let fName = $("#fName");
-        let lName = $("#lName");
-        let address = $("#address");
-        let phone = $("#phone");
-        let email = $("#email");
-
-        let country = $("#country");
-
-        let submitI = $("#submit");
-        let clearID = $("#clearID");
-        let reloadPgId = $("#reloadPgId");
-
-        // clearID.click(function () {});
-
-        // submitI.click(function () {
-        $("#mainForm").submit(function () {
-          let gender = $("input[name='radiogender']:checked").val();
-          let genderTAG = $("#genderBlock");
-
-          let select = $("#country");
-          let checkBox = $("input[name='checkBx']:checked");
-          let interestBlock = $("#interestBlock");
-
-          //   console.log(fName.val());
-          //   console.log(lName.val());
-          //   console.log(address.val());
-          //   console.log(phone.val());
-          //   console.log(email.val());
-          //   console.log("gen", gender);
-          //   console.log("select",select.val());
-          //   console.log("checkbox", checkBox[0].value);
-
-          let interest = "";
-          for (let i = 0; i < checkBox.length; i++) {
-            interest = interest + " " + checkBox[i].value;
-          }
-          //   console.log("TEST CHECK", interest);
-
-          replaceComp(fName, fName.val());
-          replaceComp(lName, lName.val());
-          replaceComp(address, address.val());
-          replaceComp(phone, phone.val());
-          replaceComp(email, email.val());
-
-          replaceComp(genderTAG, gender);
-          replaceComp(select, select.val());
-          replaceComp(interestBlock, interest);
-        });
-
-        // let submitII = document.getElementById("submit");
-        // function tte() {
-        //   alert("YO");
-        // };
-        // // submit.onclick =tte;
-
-        reloadPgId.click(function () {
-          location.reload();
-        });
-
-        function replaceComp(inputBlock, replacingContent) {
-          const element = document.createElement("label");
-          element.innerHTML = replacingContent;
-          inputBlock.replaceWith(element);
-        }
-      });
-    </script>
+    <script src="/js/jqueryformlab7.js"></script>
   </head>
 
   <body>
-    <form class="formContent" action="#" method="get" id="mainForm">
-      <label class="lbl-60w" for="fName"
-        >First Name: <input type="text" id="fName" required
-      /></label>
-      <label class="lbl-60w" for="lName"
-        >Last Name: <input type="text" id="lName" required
-      /></label>
-      <label class="lbl-60w" for="address"
-        >Address: <input type="text" id="address" required
-      /></label>
-      <label class="lbl-60w" for="phone"
-        >Phone: <input type="text" id="phone"
-      /></label>
-      <label class="lbl-60w" for="email"
-        >E-mail: <input type="text" id="email" required
-      /></label>
+    <form caction="#" method="get" id="mainForm">
+      <!-- mainform dec -->
+      <div class="formContent">
+        <div class="lineRow">
+          <label class="labelTitle" for="labelTitle">First Name:</label>
+          <input class="inputText" type="text" id="fName" required />
+        </div>
+        <div class="lineRow">
+          <label class="labelTitle" for="lName">Last Name: </label
+          ><input class="inputText" type="text" id="lName" required />
+        </div>
+        <div class="lineRow">
+          <label class="labelTitle" for="address">Address: </label
+          ><input class="inputText" type="text" id="address" required />
+        </div>
 
-      <label class="gender" for="flex_rowg10"
-        >Gender:
-        <span id="genderBlock"
-          ><input type="radio" name="radiogender" value="male" required /> Male
-          <input
-            type="radio"
-            value="female"
-            name="radiogender"
-            id="female"
-            required
-          />
-          Female
-          <input
-            type="radio"
-            value="other"
-            name="radiogender"
-            id="other"
-            required
-          />
-          Other
-        </span>
-      </label>
+        <div class="lineRow">
+          <label class="labelTitle" for="phone">Phone: </label
+          ><input class="inputText" type="text" id="phone" />
+        </div>
+        <div class="lineRow">
+          <label class="labelTitle" for="email">E-mail: </label
+          ><input class="inputText" type="text" id="email" required />
+        </div>
 
-      <label for="country"
-        >Country:
-        <select name="countrySelect" id="country">
-          <option value="d">-</option>
-          <option value="NPL">Nepal</option>
-          <option value="USA">United States</option>
-          <option value="IND">India</option>
-          <option value="TRK">Turkey</option>
-          <option value="AUS">Australia</option>
-          <option value="BNG">Bangaladesh</option>
-        </select></label
-      >
-      <label for="checkboxsection" class="flex_rowg10">
-        Interests:
-        <div id="interestBlock">
-          <label for="checkInterests"
-            >Football:
+        <div class="lineRow">
+          <label class="labelTitle" for="flex_rowg10">Gender: </label>
+          <span class="inputText" id="genderBlock"
+            ><input type="radio" name="radiogender" value="male" required />
+            Male
             <input
-              type="checkbox"
-              name="checkBx"
-              id="cbFootball"
-              value="Football"
-          /></label>
-          <label for="checkInterests"
-            >Table tennis:
-            <input type="checkbox" name="checkBx" id="cbTT" value="TT"
-          /></label></div
-      ></label>
+              type="radio"
+              value="female"
+              name="radiogender"
+              id="female"
+              required
+            />
+            Female
+            <input
+              type="radio"
+              value="other"
+              name="radiogender"
+              id="other"
+              required
+            />
+            Other
+          </span>
+        </div>
 
-      <div style="margin-top: 40px; display: inline-block">
-        <input type="submit" id="submit" style="width: 100px" />
-        <input type="reset" id="clearID" style="width: 100px" />
-        <button id="reloadPgId" style="width: 100px">Reload</button>
+        <div class="lineRow">
+          <label class="labelTitle" for="country">Country:</label>
+          <select name="countrySelect" id="country" class="inputText">
+            <option value="0">-</option>
+            <option value="NPL">Nepal</option>
+            <option value="USA">United States</option>
+            <option value="IND">India</option>
+            <option value="TRK">Turkey</option>
+            <option value="AUS">Australia</option>
+            <option value="BNG">Bangaladesh</option>
+          </select>
+        </div>
+
+        <div class="lineRow">
+          <label for="checkboxsection" class="labelTitle"> Interests:</label>
+          <div id="interestBlock" class="inputText">
+            <label for="checkInterests"
+              >Football:
+              <input
+                type="checkbox"
+                name="checkBx"
+                id="cbFootball"
+                value="Football"
+            /></label>
+            <label for="checkInterests"
+              >Table tennis:
+              <input type="checkbox" name="checkBx" id="cbTT" value="TT"
+            /></label>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <input type="submit" id="submit" style="width: 100px" />
+          <input type="reset" id="clearID" style="width: 100px" />
+          <button id="reloadPgId" style="width: 100px">Reload</button>
+        </div>
       </div>
     </form>
   </body>
