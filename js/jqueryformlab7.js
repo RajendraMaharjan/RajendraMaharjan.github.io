@@ -10,12 +10,13 @@ $(function () {
     let clearID = $("#clearID");
 
 
-    let reloadPgId = $("#reloadPgId");
+    // let reloadPgId = $("#reloadPgId");
 
     // clearID.click(function () {});
 
     // submitI.click(function () {
     $("#mainForm").submit(function () {
+
         let gender = $("input[name='radiogender']:checked").val();
         let genderTAG = $("#genderBlock");
 
@@ -29,7 +30,7 @@ $(function () {
         console.log(email.val());
         console.log("gen", gender);
         console.log("select", select.val());
-        console.log("checkbox", checkBox[0].value);
+        // console.log("checkbox", checkBox[0].value);
 
         let interest = "";
         for (let i = 0; i < checkBox.length; i++) {
@@ -46,6 +47,7 @@ $(function () {
         replaceComp(genderTAG, gender);
         replaceComp(select, select.val());
         replaceComp(interestBlock, interest);
+        return false;
     });
 
     // let submitII = document.getElementById("submit");
@@ -54,8 +56,9 @@ $(function () {
     // };
     // // submit.onclick =tte;
 
-    reloadPgId.click(function () {
-        // location.reload();
+    $("#reloadPgId").click(function () {
+        console.log("RELAOD")
+        window.location.reload();
     });
 
     function replaceComp(inputBlock, replacingContent) {
