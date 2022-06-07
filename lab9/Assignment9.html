@@ -20,11 +20,16 @@
 
         //Adding Table ol ul
 
+        let atg = document.createElement("p");
+        atg.innerHTML =
+          "<table><tr><th>Header</th><th>Header2</th></tr><tr><td>data 1</td><td>data 2</td></tr></table>";
+
         let tableContent = createTable(mainObj);
         // console.log(tableContent);
 
         // document.getElementById("content").append(tableContent);
         $("#content").append(tableContent);
+        $("#content").append(atg);
 
         let olContent = createList(mainObj, "ol");
         let ulContent = createList(mainObj, "ul");
@@ -39,7 +44,7 @@
           let ele = st[i];
           ele.setAttribute("id", "test");
           ele.style.border = "2px solid red";
-          ele.style.borderCollapse = "collapse";
+          // ele.style.borderCollapse = "collapse";
         }
         //end additing tables ol and li
 
@@ -79,6 +84,7 @@
 
             return prev;
           }, []);
+
           tableContent.innerHTML = createTableContentOnly(mainObj);
         };
         //end here
@@ -117,7 +123,7 @@
           }
           // console.log(add);
         };
-      });
+});
     </script>
   </head>
   <body>
@@ -140,7 +146,7 @@
     </div>
     <!-- </form> -->
 
-    <div id="content"></div>
+    <div id="content"><span>RAJ</span></div>
 
     <button id="sortBtn">Sort</button>
     <button id="filterBtn">Filter > 20 and from PATAN</button>

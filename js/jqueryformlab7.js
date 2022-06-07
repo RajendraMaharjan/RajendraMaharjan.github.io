@@ -20,6 +20,19 @@ $(function () {
         let gender = $("input[name='radiogender']:checked").val();
         let genderTAG = $("#genderBlock");
 
+        // let gender = document.getElementsByName("radiogender");
+        // console.log("gen", gender[0].checked);
+        // console.log("gen", gender[1].checked);
+        // console.log("gen", gender[2].checked);
+
+        // let check = document.getElementsByName("checkBx");
+        // console.log("checkbox =>", check[0].checked);
+        // console.log("checkbox VALUE =>", check[0].value);
+        // console.log("checkbox ->", check[1].checked);
+
+        // let testSE = document.getElementById("country");
+        // console.log("Select =>", testSE.value);
+        
         let checkBox = $("input[name='checkBx']:checked");
         let interestBlock = $("#interestBlock");
 

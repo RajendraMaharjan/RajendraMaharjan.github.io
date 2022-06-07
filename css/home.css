@@ -1,13 +1,16 @@
 .header {
     background-color: aqua;
     /* border:1px solid black; */
+    position: sticky;
+    top: 0;
 }
 
 .footer {
     bottom: 0;
-    position: fixed;
+    position: sticky;
     background-color: antiquewhite;
     width: 100%;
+    margin-top: 150px;
 }
 
 .hero {
