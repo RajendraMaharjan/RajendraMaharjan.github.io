@@ -1,15 +1,16 @@
-var exp = require('../lab10/NodeRepo')
+var exp = require("./NodeRepo.js")
 
 let workArray = [1, 4, 2, 1, 5, 6, 77, 8, 21, 2, 4, 2, 3, 8];
 let mixedArray = [1, "hiram", 1, 5, "solid", 8, 21, 2.2, 4, 2, "a", true];
 
 // ARRAY EXERCISE
 console.log("EVEN array ", exp.EvenExp(workArray));
+
 console.log("ODD array ", exp.OddExp(workArray));
 console.log("DIV by 4 array ", exp.Div4Exp(workArray));
 console.log("SUM of array ", exp.SumExp(workArray));
 console.log("Unique array ", exp.Unique(workArray));
-console.log(exp.Unique([1, 1, 2, 3, 4, 5, 5]));
+console.log("UNIQUE=> "+exp.Unique([1, 1, 2, 3, 4, 5, 5]));
 console.log(exp.destructiveArray([1, 2, "a"]));
 console.log(exp.findFirstOddIndex([2, 4, { a: 2, g: 4 }, 5]));
 console.log(exp.convertArrayToString([2, 4, 4, 5]));
