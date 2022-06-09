@@ -1,0 +1,22 @@
+.mainform {
+    height: 200px;
+    width: 400px;
+    border: 2px solid black;
+    margin: auto auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.formHeader {
+    align-self: center;
+}
+
+.usernamediv {
+    align-self: center;
+}
+
+.passworddiv {
+    align-self: center;
+}

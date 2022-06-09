@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Form</title>
+    <link rel="stylesheet" href="/asset/css/formstyle.css" />
+
+    <!-- <style>
+      .formContent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 2px solid black;
+        background-color: aqua;
+        border-radius: 50px;
+        padding: 30px;
+        width: 40%;
+      }
+
+      .lineRow {
+        display: flex;
+      }
+
+      .labelTitle {
+        flex: 0 0 150px;
+      }
+
+      .inputText {
+        flex: 1 1 auto;
+      }
+
+      .bottom {
+        margin-top: 30px;
+        align-self: center;
+      }
+
+      @media screen and (max-width: 700px) {
+        .formContent {
+          background-color: yellowgreen;
+          width: 350px;
+        }
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <form action="/postUser" method="post" id="mainForm">
+      <div class="formContent">
+        <div class="lineRow">
+          <label class="labelTitle" for="labelTitle">First Name:</label>
+          <input
+            class="inputText"
+            type="text"
+            id="fName"
+            name="fName"
+            required
+          />
+        </div>
+        <div class="lineRow">
+          <label class="labelTitle" for="lName">Last Name: </label
+          ><input
+            class="inputText"
+            type="text"
+            id="lName"
+            name="lName"
+            required
+          />
+        </div>
+        <div class="lineRow">
+          <label class="labelTitle" for="address">Address: </label
+          ><input
+            class="inputText"
+            type="text"
+            id="address"
+            name="address"
+            required
+          />
+        </div>
+
+        <div class="lineRow">
+          <label class="labelTitle" for="phone">Phone: </label
+          ><input class="inputText" type="text" id="phone" name="phone" />
+        </div>
+        <div class="lineRow">
+          <label class="labelTitle" for="email">E-mail: </label
+          ><input
+            class="inputText"
+            type="text"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="lineRow">
+          <label class="labelTitle" for="flex_rowg10">Gender: </label>
+          <span class="inputText" id="genderBlock"
+            ><input type="radio" name="radiogender" value="male" required />
+            Male
+            <input
+              type="radio"
+              value="female"
+              name="radiogender"
+              id="female"
+              required
+            />
+            Female
+            <input
+              type="radio"
+              value="other"
+              name="radiogender"
+              id="other"
+              required
+            />
+            Other
+          </span>
+        </div>
+
+        <div class="lineRow">
+          <label class="labelTitle" for="country">Country:</label>
+          <select name="countrySelect" id="country" class="inputText">
+            <option value="0">-</option>
+            <option value="NPL">Nepal</option>
+            <option value="USA">United States</option>
+            <option value="IND">India</option>
+            <option value="TRK">Turkey</option>
+            <option value="AUS">Australia</option>
+            <option value="BNG">Bangaladesh</option>
+          </select>
+        </div>
+
+        <div class="lineRow">
+          <label for="checkboxsection" class="labelTitle"> Interests:</label>
+          <div id="interestBlock" class="inputText">
+            <label for="checkInterests"
+              >Football:
+              <input
+                type="checkbox"
+                name="checkBx"
+                id="cbFootball"
+                value="Football"
+            /></label>
+            <label for="checkInterests"
+              >Table tennis:
+              <input type="checkbox" name="checkBx" id="cbTT" value="TT"
+            /></label>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <input type="submit" id="submit" style="width: 100px" />
+          <input type="reset" id="clearID" style="width: 100px" />
+          <button id="reloadPgId" style="width: 100px">Reload</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

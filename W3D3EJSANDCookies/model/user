@@ -1,0 +1,24 @@
+const users = [];
+
+module.exports = class User {
+    constructor(fName, lName, address, phone, email
+        , gender, country, interest) {
+        this.fName = fName;
+        this.lName = lName;
+        this.address = address;
+        this.phone = phone;
+        this.email = email;
+        this.gender = gender;
+        this.country = country;
+        this.interest = interest;
+    }
+
+    saveUser() {
+        users.push(this);
+    }
+
+    static getAllUsers() {
+        return users;
+    }
+
+}
